@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAANISHKA ML</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Tenor GIF embed -->
+    <div class="tenor-gif-embed" data-postid="15195810" data-share-method="host" data-aspect-ratio="1"
+      data-width="100%">
+      <a href="https://tenor.com/view/couple-forgive-me-asking-for-forgiveness-begging-crying-gif-15195810">Couple Forgive Me Sticker</a> from
+      <a href="https://tenor.com/search/couple-stickers">Couple Stickers</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <h1>HEHEHEHEEHE ML😣</h1>
+    <p>I LOVEE YOU MY BABYY MAANISHKAAA😣</p>
+
+    <div class="btn">
+      <a href="yes.html">Yes</a>
+      <a href="yes.html" id="move-random">No</a> <!-- Escaping No button -->
+    </div>
+  </div>
+
+  <!-- Script to make No button escape -->
+  <script>
+    const moveRandom = document.querySelector("#move-random");
+
+    function moveRandomEl(elm) {
+      elm.style.position = "fixed"; // stays on screen
+      elm.style.top = Math.floor(Math.random() * 70 + 15) + "vh";
+      elm.style.left = Math.floor(Math.random() * 70 + 15) + "vw";
+      elm.style.zIndex = 1000; // ensure it's on top
+    }
+
+    if (moveRandom) {
+      // Move button when mouse tries to enter
+      moveRandom.addEventListener("mouseenter", function (e) {
+        moveRandomEl(e.target);
+      });
+
+      // Also move on click attempt (optional)
+      moveRandom.addEventListener("mousedown", function (e) {
+        moveRandomEl(e.target);
+        e.preventDefault(); // prevent accidental click
+      });
+    }
+  </script>
+</body>
+</html>
